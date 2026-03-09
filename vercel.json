@@ -1,13 +1,20 @@
 {
   "functions": {
-    "api/index.php": {
+    "api/handler.php": {
       "runtime": "vercel-php@0.7.2"
     }
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/api/index.php"
+      "source": "/(.*)",
+      "destination": "/api/handler.php"
     }
   ]
 }
+```
+
+---
+
+**第三步** — 等 Vercel 重新部署完，测试：
+```
+https://meting-api-azure-omega.vercel.app/meting/?server=netease&type=song&id=1472480890
