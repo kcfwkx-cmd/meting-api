@@ -13,8 +13,3 @@
 }
 ```
 
----
-
-**第三步** — 等 Vercel 重新部署完，测试：
-```
-https://meting-api-azure-omega.vercel.app/meting/?server=netease&type=song&id=1472480890
